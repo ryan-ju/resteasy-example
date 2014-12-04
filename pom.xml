@@ -142,9 +142,9 @@
                             </execution>
                         </executions>
                         <configuration>
-                            <path>/backend</path>
-                            <server>tomcat7</server>
-                            <url>http://localhost:8181/manager/text</url>
+                            <path>/api</path>
+                            <server>resteasy-example</server>
+                            <url>http://localhost:8080/manager/text</url>
                         </configuration>
                     </plugin>
                 </plugins>

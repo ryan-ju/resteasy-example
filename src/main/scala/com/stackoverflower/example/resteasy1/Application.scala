@@ -5,7 +5,7 @@ import javax.ws.rs.ApplicationPath
 /**
  * Created by ryan on 03/12/14.
  */
-@ApplicationPath("/api")
+@ApplicationPath("/")
 class Application extends javax.ws.rs.core.Application {
 
 }

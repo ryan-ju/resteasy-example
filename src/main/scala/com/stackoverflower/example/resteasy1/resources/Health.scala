@@ -12,6 +12,6 @@ class Health {
   @Path("/report")
   @Produces(value = Array("application/xml", "application/json"))
   def health: Response = {
-    Response.ok().build()
+    Response.ok("Here you go!").build()
   }
 }
