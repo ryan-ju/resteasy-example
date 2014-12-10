@@ -9,9 +9,8 @@ import javax.ws.rs.{Produces, Path, GET}
 @Path("/health")
 class Health {
   @GET
-  @Path("/report")
   @Produces(value = Array("application/xml", "application/json"))
   def health: Response = {
-    Response.ok("Here you go!").build()
+    Response.ok("I'm good!").build()
   }
 }
