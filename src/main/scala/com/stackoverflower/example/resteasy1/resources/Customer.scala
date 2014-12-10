@@ -5,6 +5,8 @@ import javax.ws.rs.{PathParam, Produces, GET, Path}
 
 import com.stackoverflower.example.resteasy1.models.{Book, BookList}
 
+import scala.collection.JavaConverters._
+
 /**
  * Created by ryan on 01/12/14.
  */
@@ -19,7 +21,7 @@ class Customer {
     book.setTitle("Scala for the Impatient")
     book.setAuthor("Cay S. Horstmann")
     book.setYear(2012)
-    bookList.setBooks(List(book))
+    bookList.setBooks(List(book).asJava)
     return bookList
   }
 }

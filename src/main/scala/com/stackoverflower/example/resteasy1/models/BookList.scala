@@ -10,5 +10,5 @@ import scala.beans.BeanProperty
 @XmlRootElement
 class BookList {
   @BeanProperty
-  var books: List[Book] = null
+  var books: java.util.List[Book] = null
 }
